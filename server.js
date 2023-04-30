@@ -6,11 +6,11 @@ const port    = process.env.port || 4000;
 app.use(express.json());
 
 
-app.get("/api/",(req,res)=>{
+app.get("/",(req,res)=>{
     res.send("hello world");
 })
 
 
 app.listen(port,()=>{
-    console.log("listening");
+    console.log("server started");
 })
